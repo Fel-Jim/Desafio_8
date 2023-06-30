@@ -1,0 +1,88 @@
+/* configuracion prioncipal de pagina */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+    grid-template-columns: auto 85%;
+}
+
+/* barra superior o navbar*/
+
+header {
+    display: flex;
+    grid-area: header;
+    background-color: #2B466D;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3vh;
+    height: 9vh;
+}
+
+/* barra izquierda o menu*/
+
+menu {
+    grid-area: menu;
+    background-color: #D1D8E3;
+    margin: 0vh;
+    height: 160vh;
+}
+
+.items-categorias p {
+    margin: 1vh;
+    border: 1vh;
+}
+
+/*barra derecha con productos*/
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: auto auto auto;
+    background-color: #D1D8E3;
+    height: 160vh;
+}
+
+.productos {
+    background-color: white;
+    margin: 2vh;
+}
+
+.productos img {
+    margin: 0vh;
+    border: 0vh;
+}
+
+.productos h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.productos p {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-comprar {
+    display: flex;
+    background-color: #2B466D;
+    color: white;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+/*barra inferior o pie de pagina*/
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3vh;
+    height: 9vh;
+}
